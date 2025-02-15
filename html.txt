@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Svet - DJ MOORTAL</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Ikony FontAwesome -->
+</head>
+<body>
+    <!-- Navigácia -->
+    <nav>
+        <div class="logo">DJ MOORTAL</div>
+        <ul>
+            <li><a href="#home">Domov</a></li>
+            <li><a href="#sets">Sety</a></li>
+            <li><a href="#events">Akcie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Úvodná sekcia -->
+    <header id="home">
+        <div class="hero">
+            <h1>Vitaj vo svete DJ MOORTAL!</h1>
+            <p>Objav moje sety, akcie a hudbu, ktorú milujem!</p>
+            <a href="#sets" class="btn">Počúvaj Moje Sety</a>
+        </div>
+    </header>
+
+    <!-- Sekcia Sety -->
+    <section id="sets" class="sets">
+        <h2>Moje DJ Sety</h2>
+        <div class="set-list">
+            <div class="set-item">
+                <h3>Set 1 - Energetický Klubový Mix</h3>
+                <p>Popis: Môj najnovší mix pre klubové noci. Vychutnajte si energiu v každom tóne!</p>
+                <audio controls>
+                    <source src="set1.mp3" type="audio/mp3">
+                    Vaš prehliadač nepodporuje prehrávač.
+                </audio>
+            </div>
+            <div class="set-item">
+                <h3>Set 2 - Chillout Mix</h3>
+                <p>Popis: Tieto mixy sú ideálne pre relax a chillovanie pri západe slnka.</p>
+                <audio controls>
+                    <source src="set2.mp3" type="audio/mp3">
+                    Vaš prehliadač nepodporuje prehrávač.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcia nadchádzajúcich akcií -->
+    <section id="events" class="events">
+        <h2>Nadchádzajúce Akcie</h2>
+        <div class="events-list">
+            <div class="event-item">
+                <h3>Klubová Noc v Meste</h3>
+                <p>10. marec 2025 - Mesto, Klub XYZ</p>
+                <a href="#">Získaj vstupenky</a>
+            </div>
+            <div class="event-item">
+                <h3>Festival Beats & Sounds</h3>
+                <p>25. apríl 2025 - Areál Parku</p>
+                <a href="#">Získaj vstupenky</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcia kontaktu -->
+    <section id="contact" class="contact">
+        <h2>Kontaktuj ma</h2>
+        <p>Chceš ma pozvať na akciu alebo sa len podeliť o svoje názory? Napíš mi!</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Tvoje meno" required>
+            <input type="email" id="email" placeholder="Tvoj e-mail" required>
+            <textarea id="message" placeholder="Tvoja správa..." required></textarea>
+            <button type="submit">Odoslať</button>
+        </form>
+        <div id="confirmationMessage" class="confirmation"></div>
+    </section>
+
+    <!-- Pätka -->
+    <footer>
+        <p>&copy; 2025 DJ Meno. Všetky práva vyhradené.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

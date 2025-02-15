@@ -1,0 +1,17 @@
+// Zobrazenie potvrdenia po odoslaní formulára
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const confirmationMessage = document.getElementById('confirmationMessage');
+    confirmationMessage.textContent = "Ďakujeme za tvoju správu! Čoskoro sa ti ozvem.";
+    confirmationMessage.style.display = "block";
+});
+
+// Zmena farby navigácie pri skrolovaní
+window.onscroll = function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 100) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+};
