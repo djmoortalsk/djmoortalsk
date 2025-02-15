@@ -1,0 +1,276 @@
+/* Všeobecné nastavenia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* Animácie a Prechody */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background: #222;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+nav.scrolled {
+    background-color: #111;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Úvodná sekcia */
+header {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+header .btn {
+    background: #ff6f61;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header .btn:hover {
+    background: #ff4a39;
+}
+
+/* Sety */
+.sets {
+    background-color: #444;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.sets h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.set-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.set-item {
+    width: 300px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.set-item:hover {
+    transform: scale(1.05);
+}
+
+.set-item h3 {
+    font-size: 24px;
+    color: white;
+}
+
+.set-item p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Akcie */
+.events {
+    background-color: #222;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.events h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.events-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.event-item {
+    width: 300px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.event-item:hover {
+    transform: scale(1.05);
+}
+
+.event-item h3 {
+    font-size: 24px;
+    color: white;
+}
+
+.event-item p {
+    font-size: 16px;
+    color: white;
+}
+
+.event-item a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.event-item a:hover {
+    color: #ff4a39;
+}
+
+/* Kontakt */
+.contact {
+    background-color: #222;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #ff6f61;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #ff4a39;
+}
+
+/* Potvrdenie po odoslaní správy */
+.confirmation {
+    color: #ff6f61;
+    margin-top: 20px;
+    font-size: 18px;
+    display: none;
+}
+
+/* Pätka */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #ff6f61;
+}
+
+/* Responzívnosť */
+@media (max-width: 768px) {
+    .set-list, .events-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
